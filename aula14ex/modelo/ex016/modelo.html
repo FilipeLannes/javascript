@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <form action="cadastro.php">
+                <div class="separo">
+                    <label for="inicio">Início: </label>
+                    <input type="number" name="inicio" id="inicio"> <br>
+                </div>
+
+                <div class="separo">
+                    <label for="fim">Fim: </label>
+                    <input type="number" name="fim" id="fim"> <br>
+                </div>
+
+                <div class="separo">
+                    <label for="passo">Passo: </label>
+                    <input type="number" name="passo" id="passo"> <br>
+                </div>
+
+                <input type="button" value="Contar" id="botao" onclick="contar()">
+            </form>
+
+        </div>
+        <div>
+            <p>Impossível contar!</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; FilipeLannes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
